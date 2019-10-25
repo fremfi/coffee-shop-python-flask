@@ -55,10 +55,6 @@ def create_drink(payload):
     Returns:
         returns success if drink is updated
     """
-    # TODO: Review please explain why below doesnt work
-    # body = request.get_json()
-    # title = body.get('title', None)
-    # recipe = body.get('recipe', None)
 
     data = json.loads(request.data.decode('utf-8'))
     recipe = json.dumps(data['recipe'])
@@ -93,9 +89,6 @@ def update_drinks(payload, drink_id):
     Returns:
         returns success if drink is updated
     """
-    # TODO: Review please explain why below doesnt work
-    # body = request.get_json()
-    # title = body.get('title', None)
     data = json.loads(request.data.decode('utf-8'))
     title = data['title']
 
